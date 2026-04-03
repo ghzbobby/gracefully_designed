@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gracefully Designed</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Britta', 
+      background-color: #f7f5f2;
+      color: #2f2f2f;
+    }
+
+    header {
+      background: #6b8f71;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #f0f5f1;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: #e8ede7;
+    }
+
+    .hero h2 {
+      font-size: 2em;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 250px;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    button {
+      background: #a3b18a;
+      border: none;
+      padding: 12px;
+      color: white;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #588157;
+    }
+
+    footer {
+      background: #6b8f71;
+      text-align: center;
+      padding: 15px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Gracefully Designed</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#booking">Book</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Elegant Balloon Designs for Every Occasion</h2>
+  <p>Creating timeless, beautiful setups for your special moments.</p>
+</section>
+
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Balloon Arches</h3>
+      <p>Perfect for birthdays, weddings, and events.</p>
+    </div>
+    <div class="card">
+      <h3>Custom Designs</h3>
+      <p>Personalized balloon styling to match your theme.</p>
+    </div>
+    <div class="card">
+      <h3>Event Styling</h3>
+      <p>Full-service decoration for a stunning experience.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://i.imgur.com/0c0IRXA.png" alt="Balloon arch">
+    <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae" alt="Balloons">
+    <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48" alt="Event balloons">
+    <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176" alt="Party balloons">
+  </div>
+</section>
+
+<section id="booking" class="section contact">
+  <h2>Book Your Event</h2>
+  <p>Email: Graceeefully.designed@gmail.com</p>
+  <p>Phone: 773-727-7180</p>
+
+  <!-- Calendly inline embed -->
+  <div class="calendly-inline-widget" data-url="https://calendly.com/leo-garcia-7981-2/30min" style="min-width:320px;height:700px;"></div>
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</section>
+
+<footer>
+  <p>© 2026 Gracefully Designed. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
